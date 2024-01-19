@@ -1,1 +1,3 @@
-import './style.css';
+import fontLoader from './FontLoader';
+
+fontLoader();
