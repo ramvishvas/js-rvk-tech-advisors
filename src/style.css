@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tailwind CSS */
+.group:hover .child {
+    @apply visible opacity-100;
+}

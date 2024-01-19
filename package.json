@@ -1,0 +1,23 @@
+{
+    "name": "js-rvk-tech-advisors",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.17",
+        "eslint": "^8.0.1",
+        "eslint-config-standard": "^17.1.0",
+        "eslint-plugin-import": "^2.25.2",
+        "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+        "eslint-plugin-promise": "^6.0.0",
+        "postcss": "^8.4.33",
+        "prettier": "3.2.4",
+        "tailwindcss": "^3.4.1",
+        "vite": "^5.0.8"
+    }
+}
