@@ -27,53 +27,51 @@
         </script>
     </head>
     <body>
-        <div class="h-screen w-screen bg-dot-pattern relative bg-16/16 bg-rotate-45 bg-[var(--theme-color)]">
-            <div class="absolute top-5 right-5 z-10 flex space-x-4">
-                <button
-                    data-theme-active="false"
-                    data-theme-blue-button
-                    class="group w-5 h-5 rounded-full bg-three_blue border border-white cursor-pointer transition relative hover:border-three_blue"
-                    onclick="toggleTheme('data-theme-blue-button')"
+        <div class="absolute top-5 right-5 z-10 flex space-x-4">
+            <button
+                data-theme-active="false"
+                data-theme-blue-button
+                class="group w-5 h-5 rounded-full bg-three_blue border border-white cursor-pointer transition relative hover:border-three_blue"
+                onclick="toggleTheme('data-theme-blue-button')"
+            >
+                <span
+                    class="child absolute rounded-full bg-transparent invisible opacity-0 border-white top-0 right-0 bottom-0 left-0 border-4"
                 >
-                    <span
-                        class="child absolute rounded-full bg-transparent invisible opacity-0 border-white top-0 right-0 bottom-0 left-0 border-4"
-                    >
-                    </span>
-                    <span
-                        class="active-child absolute rounded-full bg-transparent border-white top-1 right-1 bottom-1 left-1 border"
-                    ></span>
-                </button>
-                <button
-                    data-theme-active="true"
-                    data-theme-hotpink-button
-                    class="group w-5 h-5 rounded-full bg-three_hotpink border border-white cursor-pointer transition relative"
-                    onclick="toggleTheme('data-theme-hotpink-button')"
+                </span>
+                <span
+                    class="active-child absolute rounded-full bg-transparent border-white top-1 right-1 bottom-1 left-1 border"
+                ></span>
+            </button>
+            <button
+                data-theme-active="true"
+                data-theme-hotpink-button
+                class="group w-5 h-5 rounded-full bg-three_hotpink border border-white cursor-pointer transition relative"
+                onclick="toggleTheme('data-theme-hotpink-button')"
+            >
+                <span
+                    class="child absolute rounded-full bg-transparent invisible opacity-0 border-white top-0 right-0 bottom-0 left-0 border-4"
+                ></span>
+                <span
+                    class="active-child absolute rounded-full bg-transparent border-white top-1 right-1 bottom-1 left-1 border"
+                ></span>
+            </button>
+            <button
+                data-theme-active="false"
+                data-theme-black-button
+                class="group w-5 h-5 rounded-full bg-three_black border border-white cursor-pointer transition relative hover:border-three_black"
+                onclick="toggleTheme('data-theme-black-button')"
+            >
+                <span
+                    class="child absolute rounded-full bg-transparent invisible opacity-0 border-white top-0 right-0 bottom-0 left-0 border-4"
                 >
-                    <span
-                        class="child absolute rounded-full bg-transparent invisible opacity-0 border-white top-0 right-0 bottom-0 left-0 border-4"
-                    ></span>
-                    <span
-                        class="active-child absolute rounded-full bg-transparent border-white top-1 right-1 bottom-1 left-1 border"
-                    ></span>
-                </button>
-                <button
-                    data-theme-active="false"
-                    data-theme-black-button
-                    class="group w-5 h-5 rounded-full bg-three_black border border-white cursor-pointer transition relative hover:border-three_black"
-                    onclick="toggleTheme('data-theme-black-button')"
-                >
-                    <span
-                        class="child absolute rounded-full bg-transparent invisible opacity-0 border-white top-0 right-0 bottom-0 left-0 border-4"
-                    >
-                    </span>
-                    <span
-                        class="active-child absolute rounded-full bg-transparent border-white top-1 right-1 bottom-1 left-1 border"
-                    ></span>
-                </button>
-            </div>
-
-            <div id="app"></div>
+                </span>
+                <span
+                    class="active-child absolute rounded-full bg-transparent border-white top-1 right-1 bottom-1 left-1 border"
+                ></span>
+            </button>
         </div>
+
+        <canvas id="app" class="bg-dot-pattern bg-16/16 bg-rotate-45 bg-[var(--theme-color)]"></canvas>
 
         <script type="module" src="./src/main.js"></script>
     </body>
